@@ -1,14 +1,12 @@
 ---
-title: "Automatic heading links in mdsvex"
-date: "2023-10-26"
-updated: "2023-10-26"
+title: "Hiệu năng máy Lenovo Legion 5 12IAH5 và bài tập 5/55"
+date: "05/05/2025"
+updated: "05/05/2025"
 categories:
-  - "sveltekit"
-  - "markdown"
-coverImage: "/images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg"
+coverImage: "/images/image.png"
 coverWidth: 16
 coverHeight: 9
-excerpt: Check out how heading links work with this starter in this post.
+excerpt:
 ---
 
 ## Kiểm tra và đánh giá hiệu năng máy tính: Lenovo Legion 5 12IAH5
@@ -44,21 +42,31 @@ excerpt: Check out how heading links work with this starter in this post.
 Máy Legion 5 12IAH5 có hiệu năng **cân bằng giữa học tập, giải trí và công việc sáng tạo nhẹ**, phù hợp với sinh viên công nghệ, kỹ thuật hoặc người dùng có nhu cầu sử dụng đa nhiệm, lập trình và chơi game phổ biến hiện nay.
 
 ---
-# 📘 12 Bài toán phổ biến trong ngành CNTT sử dụng Đa luồng / Đa tiến trình
+# 📘 12 Bài toán phổ biến trong ngành CNTT và nơi sử dụng Đa luồng / Đa tiến trình
 
-| STT | Bài toán                             | Sử dụng Đa luồng/Đa tiến trình để làm gì? |
-|-----|--------------------------------------|--------------------------------------------|
-| 1   | Xử lý ảnh (Image Processing)         | Chia ảnh thành nhiều vùng và xử lý song song bằng đa luồng. |
-| 2   | Web Scraping / Crawler               | Gửi nhiều request đồng thời để thu thập dữ liệu nhanh hơn. |
-| 3   | Xử lý Big Data (Hadoop, Spark)       | Phân phối dữ liệu và xử lý song song trên nhiều tiến trình/máy. |
-| 4   | Lập trình Game (Unity, Unreal)       | Tách logic game, đồ họa, âm thanh thành các luồng riêng biệt. |
-| 5   | Mô phỏng khoa học (Simulation)       | Chạy mô phỏng nhiều kịch bản đồng thời bằng đa tiến trình. |
-| 6   | Hệ thống thương mại điện tử          | Xử lý đồng thời nhiều yêu cầu của người dùng (truy vấn, giỏ hàng...). |
-| 7   | Chatbot / Server đa kết nối (Socket) | Mỗi kết nối client chạy trên một luồng hoặc tiến trình riêng. |
-| 8   | Công cụ tìm kiếm (Search Engine)     | Crawl web, phân tích và đánh chỉ mục song song. |
-| 9   | Machine Learning / AI                | Training mô hình trên nhiều tập dữ liệu bằng GPU và đa tiến trình. |
-| 10  | Xử lý video (Render, Encode)         | Xử lý nhiều frame cùng lúc bằng đa luồng giúp render nhanh hơn. |
-| 11  | Cơ sở dữ liệu (Database Engine)      | Truy vấn SQL song song, xử lý giao dịch nhiều người dùng. |
-| 12  | Compiler / Trình biên dịch           | Phân tích cú pháp và sinh mã máy bằng các luồng song song. |
+| STT | Bài toán                             | Sử dụng đa luồng / đa tiến trình ở đâu? |
+|-----|--------------------------------------|------------------------------------------|
+| 1   | Xử lý ảnh (Image Processing)         | Mỗi luồng xử lý một phần ảnh (pixel/block) trong các hàm xử lý ảnh. |
+| 2   | Web Scraping / Crawler               | Mỗi tiến trình hoặc luồng phụ trách một URL hoặc domain riêng biệt. |
+| 3   | Xử lý Big Data (Hadoop, Spark)       | Mỗi tiến trình xử lý một phần của tập dữ liệu phân tán trong cluster. |
+| 4   | Lập trình Game (Unity, Unreal)       | Một luồng cho logic game, một luồng cho đồ họa, một luồng cho âm thanh. |
+| 5   | Mô phỏng khoa học (Simulation)       | Mỗi tiến trình chạy một kịch bản/mô hình mô phỏng riêng biệt. |
+| 6   | Hệ thống thương mại điện tử          | Mỗi request của người dùng được xử lý trong một luồng riêng trên server. |
+| 7   | Chatbot / Socket Server              | Mỗi kết nối client được phục vụ bởi một luồng hoặc tiến trình độc lập. |
+| 8   | Công cụ tìm kiếm (Search Engine)     | Crawl song song nhiều website và phân tích tài liệu trên các tiến trình riêng. |
+| 9   | Machine Learning / AI                | Mỗi batch dữ liệu training được xử lý bởi các luồng/tiến trình khác nhau. |
+| 10  | Xử lý video (Render, Encode)         | Mỗi khung hình (frame) được xử lý bởi một luồng/tiến trình riêng. |
+| 11  | Cơ sở dữ liệu (Database Engine)      | Mỗi truy vấn SQL hoặc transaction xử lý trong một luồng riêng biệt. |
+| 12  | Compiler / Trình biên dịch           | Các giai đoạn như phân tích, tối ưu hóa, dịch mã chạy trên các luồng riêng. |
+
+> 📌 **Lưu ý**:  
+> - **Đa luồng (Multithreading)** thường dùng trong ứng dụng chia sẻ bộ nhớ (ví dụ: game, server).  
+> - **Đa tiến trình (Multiprocessing)** phù hợp khi cần tách biệt tài nguyên hoặc xử lý dữ liệu lớn trên nhiều lõi CPU.
+
+---
+
+## 🔗 Tài liệu tham khảo
+
+- [How Ray, a Distributed AI Framework, Helps Power ChatGPT](https://thenewstack.io/how-ray-a-distributed-ai-framework-helps-power-chatgpt/)
 
 ---
