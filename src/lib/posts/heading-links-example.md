@@ -3,10 +3,12 @@ title: "Hiệu năng máy Lenovo Legion 5 12IAH5 và bài tập 5/55"
 date: "05/05/2025"
 updated: "05/05/2025"
 categories:
+- MachineMachine
+- yayyay
 coverImage: "/images/image.png"
 coverWidth: 16
 coverHeight: 9
-excerpt:
+excerpt: hdhwhhdh.
 ---
 
 ## Kiểm tra và đánh giá hiệu năng máy tính: Lenovo Legion 5 12IAH5
